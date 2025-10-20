@@ -1,0 +1,10 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: gettasktodoservice
+spec:
+  selector:
+    app: gettasktodo
+  ports:
+  - port: 80
+    targetPort: 80

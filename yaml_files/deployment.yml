@@ -1,0 +1,19 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: gettasktododeployment
+spec:
+  replicas: 3
+  selector:
+    matchLabels:
+      app: gettasktodo
+  template:
+    metadata:
+      labels:
+        app: gettasktodo
+    spec:
+      containers:
+      - name: gettasktodo
+        image: manoacr616312.azurecr.io/gettasktodo:v1
+        ports:
+        - containerPort: 80
