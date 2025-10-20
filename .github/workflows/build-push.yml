@@ -25,16 +25,16 @@ jobs:
           subscription-id: 90ba3f99-29ea-4a71-8106-8a6775ca9f61
 
       - name: Image Build
-        run: docker build -t gettasktodo:v2 .
+        run: docker build -t gettasktodo:v3 .
 
       - name: ACR login
         run: az acr login --name manoacr616312
 
       - name: Image Tag
-        run: docker tag gettasktodo:v2 manoacr616312.azurecr.io/gettasktodo:v2
+        run: docker tag gettasktodo:v3 manoacr616312.azurecr.io/gettasktodo:v3
         
       - name: ACR Push
-        run: docker push manoacr616312.azurecr.io/gettasktodo:v2
+        run: docker push manoacr616312.azurecr.io/gettasktodo:v3
       
 
   

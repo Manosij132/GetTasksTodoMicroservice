@@ -14,6 +14,6 @@ spec:
     spec:
       containers:
       - name: gettasktodo
-        image: manoacr616312.azurecr.io/gettasktodo:v1
+        image: manoacr616312.azurecr.io/gettasktodo:v3
         ports:
-        - containerPort: 80
+        - containerPort: 8000
