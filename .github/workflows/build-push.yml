@@ -25,7 +25,7 @@ jobs:
           subscription-id: 90ba3f99-29ea-4a71-8106-8a6775ca9f61
 
       - name: Image Build
-        run: docker build -t gettasktodo:v1
+        run: docker build -t gettasktodo:v1 .
 
       - name: ACR login
         run: az acr login --name manoacr616312
